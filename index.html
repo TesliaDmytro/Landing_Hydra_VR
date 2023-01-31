@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hydra Virtual Reality</title>
+
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="style.css">
+
+	<!-- +font Montserrat-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+	<!-- -font Montserrat-->
+
+</head>
+
+<body>
+
+	<section class="header">
+
+		<!-- +Navbar -->
+		<nav class="navbar navbar-dark navbar-expand-xl">
+  			<div class="container d-flex justify-content-between">
+    			<a class="navbar-brand" href="#">
+    				<img class="img-fluid logoImg" src="img/logo.png" alt="Logo Hydra">
+    			</a>
+
+    			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+     				<img src="img/togglerBtn.svg" alt="toggler">
+    			</button>
+
+    			<div class="collapse navbar-collapse" id="navbarNav">
+
+      				<ul class="navbar-nav mx-auto ">
+         				<li class="nav-item">
+          					<a class="nav-link" href="#aboutLink">
+          						about
+          					</a>
+        				</li>
+
+        				<li class="nav-item">
+          					<a class="nav-link" href="#servicesLink">
+          						services
+          					</a>
+        				</li>
+
+        				<li class="nav-item">
+          					<a class="nav-link" href="#technologiesLink">
+          						technologies
+          					</a>
+        				</li>
+
+        				<li class="nav-item">
+          					<a class="nav-link" href="#howtoLink">
+          						how to
+          					</a>
+        				</li>
+      				</ul>
+        			
+        			<button class="figureWhiteBtn" >
+        				contact us
+        			</button>
+
+        			<button class="figureGradientBtn" >
+        				join hydra
+        			</button>
+           			
+    			</div>
+  			</div>
+		</nav>
+		<!-- –Navbar -->
+		
+		<div class="container header__mainCont">
+			<div class="row d-flex flex-md-row-reverse justify-content-between">
+				
+				<div class="col-lg-7 col-xl-6 col-xxl-5 text-center"> <!-- VR-girl -->
+
+					<img class="girlVR img-fluid AnimScale animatedItem animNoHide" src="img/girlVR.png" alt="VR girl mask">
+
+				</div>
+
+				<div class="col-lg-5 text-lg-start text-center">
+
+					<h1 id="mainHead" class="mainHead animatedItem animNoHide">
+						<span class="gradientText">Dive </span>Into The Depths Of<span class="gradientText"> Virtual Reality</span> 
+					</h1>
+
+					<p class="header__mainCont__text animatedItem animNoHide">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore nisl tincidunt eget. Lectus mauris eros in vitae.
+					</p>
+
+					<div>
+						<button class="figureGradientBtn buildYourWorldBtn" >
+	        				build your world
+	        			</button>
+	        			<img class="shortArrow" src="img/shortArrow.svg" alt="short Arrow">
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="container contacts">   
+			<div class="row">
+
+				<div class="col-lg-4 d-flex align-items-center justify-content-center">
+					<div class="contacts__block d-flex">
+						<img class="contacts__logo" src="img/address.svg" alt="address">
+						<div>
+							<p>
+								Pay Us a Visit
+							</p>
+							<p class="contacts__text">
+								Union St, Seattle, WA 98101, United States
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 contacts__border d-flex align-items-center justify-content-center">
+					<div class="contacts__centerBlock d-flex ">
+						<img class="contacts__logo" src="img/call.svg" alt="address">
+						<div>
+							<p>
+								Give Us a Call
+							</p>
+							<p class="contacts__text">
+								(110) 1111-1010
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-4 d-flex align-items-center justify-content-center">
+					<div class="contacts__block d-flex">
+						<img class="contacts__logo" src="img/mail.svg" alt="mail">
+						<div>
+							<p>
+								Send Us a Message
+							</p>
+							<p class="contacts__text">
+								Contact@HydraVTech.com
+							</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<!-- +Carousel Contacts -->
+		<div id="carouselContacts" class="carousel slide d-flex d-lg-none justify-content-center align-items-center carouselContacts" data-bs-ride="carousel">
+			<div class="carousel-inner contactsSlider">
+				<div class="carousel-item active">
+					<div class="contacts__block d-flex align-items-center justify-content-center">
+						<img class="contacts__logo" src="img/address.svg" alt="address">
+						<div>
+							<p class="contacts__text">
+								Union St, Seattle, WA 98101, United States
+							</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="carousel-item">
+					<div class="contacts__centerBlock d-flex align-items-center justify-content-center">
+						<img class="contacts__logo" src="img/call.svg" alt="address">
+						<div>
+							<p class="contacts__text">
+								(110) 1111-1010
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="contacts__block d-flex align-items-center justify-content-center">
+						<img class="contacts__logo" src="img/mail.svg" alt="mail">
+						<div>
+							<p class="contacts__text">
+								Contact@HydraVTech.com
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev carouselPrev" type="button" data-bs-target="#carouselContacts" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next carouselNext" type="button" data-bs-target="#carouselContacts" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<!-- –Carousel Contacts -->
+
+	</section> <!-- –header -->
+
+	<section class="introduction" id="aboutLink">
+		<div class="container introduction__mainCont">
+			<div class="row rowAnim animatedItem animNoHide">
+				<div class="col-lg-5 text-center text-lg-start colAnim">
+					<h2>
+						Introduction
+					</h2>
+					<div class="d-xxl-flex justify-content-center justify-content-lg-start">
+						<h3>
+							to hydra vr
+						</h3>
+						<img class="arrowLine" src="img/arrowLine.svg" alt="arrow line">
+						<img class="shortArrowLong" src="img/shortArrow.svg" alt="arrow">
+					</div>
+				</div>
+				<div class="col-lg-7 introduction__text colAnim">
+					<p>
+						Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+						nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+						quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+						lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+					</p>
+				</div>
+			</div>
+			<div class="row about d-flex justify-content-between align-items-center">
+				<div class="col-lg-6 col-xl-5 text-lg-start text-center AnimScale animatedItem animNoHide">
+					<img class="img-fluid manVR " src="img/manVR.png" alt="man VR">
+				</div>
+				<div class="col-lg-6  about__description animatedItem animNoHide rowAnim">
+					<h2 class="colAnim">
+						about
+					</h2>
+					<h3 class="colAnim">
+						hydra vr
+					</h3>
+					<p class="colAnim">
+						Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus 
+						urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida 
+						dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. 
+						Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet 
+						sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam 
+						etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet 
+						cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha
+						retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi
+						n tempor.
+					</p>
+					<div class="text-lg-start text-center">
+						<button class="figureGradientBtn getInTouchBtn " >
+	        				let’s get in touch
+	        			</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- –introduction -->
+
+	<section class="whyBuild" id="servicesLink"> <!--  +Why Build + Technologies -->
+		<div class="container whyBuild__mainCont">
+			<div class="row rowAnim animatedItem animNoHide">
+				<div class="col-lg-5 text-center text-lg-start colAnim">
+					<h2>
+						why build
+					</h2>
+					<div class="d-xxl-flex justify-content-center justify-content-lg-start">
+						<h3>
+							with hydra?
+						</h3>
+						<img class="arrowLine" src="img/arrowLine.svg" alt="arrow line">
+						<img class="shortArrowLong" src="img/shortArrow.svg" alt="arrow">
+					</div>
+				</div>
+				<div class="col-lg-7 whyBuild__text colAnim">
+					<p>
+						Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+						nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+						quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare 
+						lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="container whyBuild__cardCont">   <!-- +Why We Build Cards -->
+			<div class="row rowCards animatedItem animNoHide d-flex justify-content-between">
+
+				<div class="col-xl-3 whyBuild__cardCont__card colCards text-center align-items-center">
+					<img class="img-fluid" src="img/simulation.png" alt="Simulation">
+					<h4 class="d-inline-block">
+						simulation
+					</h4>
+					<p class="text-start">
+						Vitae sapien pellentesque habitant morbi
+						nunc. Viverra aliquet  porttitor rhoncus 
+						libero justo laoreet sit amet vitae.
+					</p>
+					<button class="figureGradientBtn getItNowBtn " >
+	        			try it now
+	        		</button>
+				</div>
+
+				<div class="col-xl-3 whyBuild__cardCont__card text-center align-items-center colCards">
+					<img class="img-fluid" src="img/education.png" alt="education">
+					<h4 class="d-inline-block">
+						education
+					</h4>
+					<p class="text-start">
+						Vitae sapien pellentesque habitant morbi
+						nunc. Viverra aliquet  porttitor rhoncus 
+					</p>
+					<button class="figureGradientBtn getItNowBtn " >
+	        			try it now
+	        		</button>
+				</div>
+
+				<div class="col-xl-3 whyBuild__cardCont__card text-center align-items-center colCards">
+					<img class="img-fluid" src="img/selfcare.png" alt="self-care">
+					<h4 class="d-inline-block">
+						self-care
+					</h4>
+					<p class="text-start">
+						Vitae sapien pellentesque habitant morbi
+						nunc. Viverra aliquet  porttitor rhoncus 
+						libero justo laoreet sit amet vitae.
+					</p>
+					<button class="figureGradientBtn getItNowBtn " >
+	        			try it now
+	        		</button>
+				</div>
+
+				<div class="col-xl-3 whyBuild__cardCont__card text-center align-items-center colCards">
+					<img class="img-fluid" src="img/outdoor.png" alt="outdoor">
+					<h4 class="d-inline-block">
+						outdoor
+					</h4>
+					<p class="text-start">
+						Vitae sapien pellentesque habitant morbi
+						nunc. Viverra aliquet  porttitor rhoncus 
+						libero justo laoreet sit amet vitae. Vitae sapien pellentesque habitant morbi
+						nunc. Viverra aliquet  porttitor rhoncus
+					</p>
+					<button class="figureGradientBtn getItNowBtn " >
+	        			try it now
+	        		</button>
+				</div>
+
+			</div>
+		</div> <!-- –Why We Build Cards -->
+
+		<!-- +Carousel Why We Build Cards -->
+		<div id="carouselWWB" class="carousel slide d-flex d-lg-none justify-content-center" data-bs-ride="carousel">
+			<div class="carousel-inner cardSlider">
+				<div class="carousel-item active">
+					<div class="whyBuild__cardCont__card text-center align-items-center">
+						<div>
+							<img class="img-fluid" src="img/simulation.png" alt="Simulation">
+						</div>
+						<h4 class="d-inline-block">
+							simulation
+						</h4>
+						<p>
+							Vitae sapien pellentesque habitant morbi
+							nunc. Viverra aliquet  porttitor rhoncus 
+							libero justo laoreet sit amet vitae.
+						</p>
+						<button class="figureGradientBtn getItNowBtn " >
+							try it now
+						</button>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="whyBuild__cardCont__card text-center align-items-center">
+						<div>
+							<img class="img-fluid" src="img/education.png" alt="education">
+						</div>
+						<h4 class="d-inline-block">
+							education
+						</h4>
+						<p>
+							Vitae sapien pellentesque habitant morbi
+							nunc. Viverra aliquet  porttitor rhoncus 
+						</p>
+						<button class="figureGradientBtn getItNowBtn " >
+							try it now
+						</button>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="whyBuild__cardCont__card text-center align-items-center">
+						<div>
+							<img class="img-fluid" src="img/selfcare.png" alt="self-care">
+						</div>
+						<h4 class="d-inline-block">
+							self-care
+						</h4>
+						<p>
+							Vitae sapien pellentesque habitant morbi
+							nunc. Viverra aliquet  porttitor rhoncus 
+							libero justo laoreet sit amet vitae.
+						</p>
+						<button class="figureGradientBtn getItNowBtn " >
+							try it now
+						</button>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="whyBuild__cardCont__card text-center align-items-center">
+						<div>
+							<img class="img-fluid" src="img/outdoor.png" alt="outdoor">
+						</div>
+						<h4 class="d-inline-block">
+							outdoor
+						</h4>
+						<p>
+							Vitae sapien pellentesque habitant morbi
+							nunc. Viverra aliquet  porttitor rhoncus 
+							libero justo laoreet sit amet vitae. Vitae sapien pellentesque habitant morbi
+							nunc. Viverra aliquet  porttitor rhoncus
+						</p>
+						<button class="figureGradientBtn getItNowBtn " >
+							try it now
+						</button>
+					</div>
+				</div>
+
+			</div>
+
+			<button class="carousel-control-prev carouselPrev" type="button" data-bs-target="#carouselWWB" data-bs-slide="prev">
+				<span class="carouselPrevIcon d-flex align-items-center justify-content-center" aria-hidden="true">
+					<i class="fa-solid fa-chevron-left fa-lg"></i>
+				</span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+
+			<button class="carousel-control-next carouselNext" type="button" data-bs-target="#carouselWWB" data-bs-slide="next">
+				<span class="carouselNextIcon d-flex align-items-center justify-content-center" aria-hidden="true">
+					<i class="fa-solid fa-chevron-right fa-lg"></i>
+				</span>
+				<span class="visually-hidden">Next</span>
+			</button>
+
+		</div>
+		<!-- –Carousel Why We Build Cards -->
+
+		<div class="container technologiesCont" id="technologiesLink">
+			<div class="row technologiesRow">
+				<div class="col d-flex justify-content-center align-items-center">
+					<div class="text-center">
+						<h2>
+							technologies & hardware
+						</h2>
+						<h3>
+							used by hydra vr.
+						</h3>
+					</div>
+				</div>
+			</div>
+			<div class="arrowDowbBtn d-lg-flex d-none justify-content-center align-items-center">
+				<i class="fa-solid fa-chevron-down fa-2x"></i>
+			</div>
+		</div>
+
+		<div class="container BrandsCont d-none d-lg-block">  <!-- Brands -->
+			<div class="row d-flex align-items-center rowAnim animatedItem animNoHide">
+				<div class="col-lg-3 text-center colAnim">
+					<img class="img-fluid" src="img/brand1.png" alt="brand 1">
+				</div>
+				<div class="col-lg-3 text-center colAnim">
+					<img class="img-fluid" src="img/brand2.png" alt="brand 2">
+				</div>
+				<div class="col-lg-3 text-center colAnim">
+					<img class="img-fluid" src="img/brand3.png" alt="brand 3">
+				</div>
+				<div class="col-lg-3 text-center colAnim">
+					<img class="img-fluid" src="img/brand4.png" alt="brand 4">
+				</div>
+			</div>
+		</div>
+
+		<!-- +Carousel Brands -->
+		<div id="carouselBrands" class="carousel slide d-flex d-lg-none justify-content-center" data-bs-ride="carousel">
+			<div class="carousel-inner brandsSlider">
+				<div class="carousel-item active">
+					<div class="brandItem d-flex justify-content-center align-items-center">
+						<img class="img-fluid" src="img/brand1.png" alt="brand1">
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="brandItem d-flex justify-content-center align-items-center">
+						<img class="img-fluid" src="img/brand2.png" alt="brand2">
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="brandItem d-flex justify-content-center align-items-center">
+						<img class="img-fluid" src="img/brand3.png" alt="brand3">
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="brandItem d-flex justify-content-center align-items-center">
+						<img class="img-fluid" src="img/brand4.png" alt="brand4">
+					</div>
+				</div>
+
+			</div>
+
+			<button class="carousel-control-prev carouselPrev" type="button" data-bs-target="#carouselBrands" data-bs-slide="prev">
+				<span class="carouselPrevIcon d-flex align-items-center justify-content-center" aria-hidden="true">
+					<i class="fa-solid fa-chevron-left fa-lg"></i>
+				</span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+
+			<button class="carousel-control-next carouselNext" type="button" data-bs-target="#carouselBrands" data-bs-slide="next">
+				<span class="carouselNextIcon d-flex align-items-center justify-content-center" aria-hidden="true">
+					<i class="fa-solid fa-chevron-right fa-lg"></i>
+				</span>
+				<span class="visually-hidden">Next</span>
+			</button>
+
+		</div>
+		<!-- –Carousel Brands -->
+
+	</section> <!--  –Why Build + Technologies -->
+
+	<section class="howWeBuild" id="howtoLink"> <!-- +How We Build -->
+
+		<div class="container howWeBuild__mainCont">
+			<div class="row rowAnim animatedItem animNoHide">
+				<div class="col-lg-5 text-center text-lg-start colAnim">
+					<h2>
+						how we build
+					</h2>
+					<div class="d-xxl-flex justify-content-center justify-content-lg-start">
+						<h3>
+							with hydra vr?
+						</h3>
+						<img class="arrowLine1" src="img/arrowLine.svg" alt="arrow line">
+						<img class="shortArrowLong" src="img/shortArrow.svg" alt="arrow">
+					</div>
+				</div>
+				<div class="col-lg-7 howWeBuild__text colAnim">
+					<p>
+						Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat 
+						nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo 
+						quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus.
+					</p>
+				</div>
+			</div>
+		</div>
+
+								<!-- +cards How We Build -->
+		<div class="container howWeBuild__Cont d-none d-lg-block">
+			<div class="row rowCards animatedItem animNoHide">
+
+				<div class="col-3 colCards">
+					<div class="howBuild__Card d-flex flex-wrap justify-content-center">
+						<div class="howBuild__Card__number d-flex justify-content-center align-items-center">
+							<p>01</p>
+						</div>
+						<div class="howBuild__Card__descr d-flex justify-content-center">
+							<div class="howBuild__Card__descr__arrow">
+								<i class="fa-solid fa-arrow-right fa-xl"></i>
+							</div>
+							<h4>
+								3D Conception & Design
+							</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-3 colCards">
+					<div class="howBuild__Card d-flex flex-wrap justify-content-center">
+						<div class="howBuild__Card__number d-flex justify-content-center align-items-center">
+							<p>02</p>
+						</div>
+						<div class="howBuild__Card__descr d-flex justify-content-center">
+							<div class="howBuild__Card__descr__arrow">
+								<i class="fa-solid fa-arrow-right fa-xl"></i>
+							</div>
+							<h4>
+								Interaction Design
+							</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-3 colCards">
+					<div class="howBuild__Card d-flex flex-wrap justify-content-center">
+						<div class="howBuild__Card__number d-flex justify-content-center align-items-center">
+							<p>03</p>
+						</div>
+						<div class="howBuild__Card__descr d-flex justify-content-center">
+							<div class="howBuild__Card__descr__arrow">
+								<i class="fa-solid fa-arrow-right fa-xl"></i>
+							</div>
+							<h4>
+								VR World User Testing
+							</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-3 colCards">
+					<div class="howBuild__Card d-flex flex-wrap justify-content-center">
+						<div class="howBuild__Card__number d-flex justify-content-center align-items-center">
+							<p>04</p>
+						</div>
+						<div class="howBuild__Card__descr d-flex justify-content-center">
+							<div class="howBuild__Card__descr__arrow">
+								<i class="fa-solid fa-arrow-right fa-xl"></i>
+							</div>
+							<h4>
+								Hydra VR Deploy
+							</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>  <!-- –cards How We Build -->
+ 
+		<!-- +Carouse How We Build -->
+		<div id="carouselHowWeBuild" class="carousel slide d-flex d-lg-none justify-content-center" data-bs-ride="carousel">
+			<div class="carousel-inner brandsSlider">
+
+				<div class="carousel-item active">
+					<div class="howBuild__Card">
+						<div class="howBuild__Card__number mx-auto d-flex align-items-center justify-content-center">
+							<p>01</p>
+						</div>
+						<div class="howBuild__Card__descr mx-auto">
+							<h4>
+								3D Conception & Design
+							</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="howBuild__Card">
+						<div class="howBuild__Card__number mx-auto d-flex align-items-center justify-content-center">
+							<p>01</p>
+						</div>
+						<div class="howBuild__Card__descr mx-auto">
+							<h4>
+								3D Conception & Design
+							</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="howBuild__Card">
+						<div class="howBuild__Card__number mx-auto d-flex align-items-center justify-content-center">
+							<p>01</p>
+						</div>
+						<div class="howBuild__Card__descr mx-auto">
+							<h4>
+								3D Conception & Design
+							</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item">
+					<div class="howBuild__Card">
+						<div class="howBuild__Card__number mx-auto d-flex align-items-center justify-content-center">
+							<p>01</p>
+						</div>
+						<div class="howBuild__Card__descr mx-auto">
+							<h4>
+								3D Conception & Design
+							</h4>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<button class="carousel-control-prev carouselPrev carouselPrevDown" type="button" data-bs-target="#carouselHowWeBuild" data-bs-slide="prev">
+				<span class="carouselPrevIcon d-flex align-items-center justify-content-center" aria-hidden="true">
+					<i class="fa-solid fa-chevron-left fa-lg"></i>
+				</span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+
+			<button class="carousel-control-next carouselNext carouselNextDown" type="button" data-bs-target="#carouselHowWeBuild" data-bs-slide="next">
+				<span class="carouselNextIcon d-flex align-items-center justify-content-center" aria-hidden="true">
+					<i class="fa-solid fa-chevron-right fa-lg"></i>
+				</span>
+				<span class="visually-hidden">Next</span>
+			</button>
+
+		</div>
+		<!-- –Carousel How We Build -->
+
+	</section> <!-- –How We Build -->
+
+	<section class="footer">  <!-- +Footer-->
+		
+		<form action="#" class="form" id="joinForm" name="joinForm"> <!-- +Join Form-->
+
+			<div class="container joinCont">
+				<div class="row mb-3">
+					<div class="col d-flex justify-content-center">
+						<div class="text-center">
+							<h2 class="text-center">
+								join hydra
+							</h2>
+							<img src="img/vector16.svg" alt="line" class="formLine">
+							<h3>
+								Let’s Build Your VR Experience
+							</h3>
+						</div>
+					</div>
+				</div>
+								<!-- +Form -->
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<input type="text" name="firstName" value="" placeholder="First Name*" tabindex="1" minlength="2" maxlength="20" class="_req">
+					</div>
+					<div class="col-lg-6 col-12">
+						<input type="text" name="lastName" value="" placeholder="Last Name" tabindex="2" class="notReq">
+					</div>
+					<div class="col-lg-6 col-12">
+						<input type="text" name="email" value="" placeholder="Email*" maxlength="20" class="_req">
+					</div>
+					<div class="col-lg-6 col-12">
+						<input type="tel" name="phoneNumber" value="" placeholder="Phone Number*" tabindex="3" maxlength="20" class="_req">
+					</div>
+					<div class="col-12">
+						<input type="text" name="subject" value="" placeholder="Subject" tabindex="4" maxlength="100" class="notReq">
+					</div>
+					<div class="col-12">
+						<textarea name="text" placeholder="Tell Us Something..." tabindex="5" maxlength="2000" class="notReq"></textarea>
+					</div>
+					<div class="col-12 text-center">
+						<button class="figureGradientBtn SendBtn" type="submit" tabindex="6">
+	        				send to hydra
+	        			</button>
+					</div>
+				</div>  <!-- –Form -->
+			</div>
+		</form>     <!-- –Join Form-->
+
+		<div class="container footerCont">
+			<div class="row justify-content-between">
+				<div class="col-lg-2 text-center">
+					<img src="img/vector.png" alt="small logo">
+				</div>
+
+				<div class="col-lg-1 d-none d-lg-block text-center">
+					<img src="img/vector20.svg" alt="vertical line">
+				</div>
+
+				<div class="col-lg-2 d-none d-lg-block">
+					<ul class="footerLinkBlock mx-auto list-unstyled">
+         				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						about
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						services
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						technologies
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						how to
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						join hydra
+          					</a>
+        				</li>
+      				</ul>
+				</div>
+
+				<div class="col-lg-1 d-none d-lg-block text-center">
+					<img src="img/vector20.svg" alt="vertical line">
+				</div>
+
+				<div class="col-lg-2 d-none d-lg-block">
+					<ul class="footerLinkBlock mx-auto list-unstyled">
+         				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						F.A.Q
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						sitemap
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						conditions
+          					</a>
+        				</li>
+
+        				<li class="footerLinkBlock__li">
+          					<a class="footerLinkBlock__li__link" href="#0">
+          						licenses
+          					</a>
+        				</li>
+
+      				</ul>
+				</div>
+
+				<div class="col-lg-1 d-none d-lg-block text-center">
+					<img src="img/vector20.svg" alt="vertical line">
+				</div>
+
+				<div class="col-lg-3 text-center text-lg-start">
+					<div class="socials">
+
+						<p>
+							socialize with hydra
+					 	</p>
+
+					 	<div class="social d-flex justify-content-center justify-content-lg-start">
+					 		<a class="socialItem" href="#0">
+								<i class="fa-brands fa-facebook-f fa-xl"></i>
+							</a>
+							<a class="socialItem" href="#0">
+								<i class="fa-brands fa-twitter fa-xl"></i>
+							</a>
+							<a class="socialItem" href="#0">
+								<i class="fa-brands fa-linkedin-in fa-xl"></i>
+							</a>
+							<a class="socialItem" href="#0">
+								<i class="fa-brands fa-youtube fa-xl"></i>
+							</a>
+							<a class="socialItem" href="#0">
+								<i class="fa-brands fa-instagram fa-xl"></i>
+							</a>
+							<a class="socialItem" href="#0">
+								<i class="fa-brands fa-pinterest fa-xl"></i>
+							</a>
+					 	</div>
+
+					 	<button class="figureGradientBtn buildYourWorldBtn" >
+	        				build your world
+	        			</button>
+
+					</div>
+
+				</div>
+
+
+			</div>
+				<div class="row rights text-center">
+					<div class="col12">
+						<img src="img/vector17.png" alt="line">
+						<p>
+							2023 © hydra landing page - Design by zine. e. falouti - all rights reserved 
+						</p>
+						<p>
+							site layout by Teslia D 
+						</p>
+						<p>
+							(non-commercial)
+						</p>
+					</div>
+				</div>
+		</div>
+	</section>  <!-- –Footer-->
+
+	<script src="https://kit.fontawesome.com/926739840c.js" crossorigin="anonymous"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+	<script src='script.js'></script>
+</body>
+</html>
