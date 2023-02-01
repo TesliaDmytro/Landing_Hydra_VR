@@ -4,5 +4,5 @@ Hydra Virtual Reality Landing Page / https://tesliadmytro.github.io/Landing_Hydr
 - Adaptive layout
 - Pixel Perfect
 - CSS and JS animations
-- Form validation
+- JS Form validation 
 - Letter sending is configured via PHPMailer + sendmail.php
