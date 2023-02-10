@@ -172,7 +172,41 @@ document.addEventListener('DOMContentLoaded', function(){
 				}
 			})		//green for unrequired fullfilled
 		}
-
 	// -------------Form validation
 
+	//----Modal
+	const contactUsBtn = document.getElementById('contactUs');
+	const contactUsModal = document.getElementById('contactUsModal');
+
+	contactUsBtn.addEventListener('click', showModal);
+
+	function showModal(){
+		contactUsModal.classList.add('modalShow');
+		contactUsModalContent.forEach(el=>
+			el.classList.remove('modalContentShow')
+		);
+		contactUsModalContent[0].classList.add('modalContentShow');
+		document.body.style.overflowY = 'hidden';
+	}
+
+	const okModalBtn = document.getElementById('okModalBtn');
+	const contactUsModalContent = document.querySelectorAll('.modalContactUs__content');
+	const ContactUsTextarea = document.getElementById('ContactUsTextarea');
+	okModalBtn.addEventListener('click', nextModalContent);
+
+	function nextModalContent(){
+		ContactUsTextarea.value 
+		?contactUsModalContent.forEach(el=>
+			el.classList.toggle('modalContentShow')
+		)
+		:ContactUsTextarea.placeholder = "It's slill empty";
+	}
+
+	const modalClose = document.querySelectorAll('#closeModal');
+	modalClose.forEach(el=> el.addEventListener('click', closeModal));
+	function closeModal() {
+		contactUsModal.classList.remove('modalShow');
+		document.body.style.overflowY = '';
+	}
+	//----Modal
 })

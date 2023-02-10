@@ -729,6 +729,67 @@ input:focus, textarea:focus {
 	margin-bottom: 30px;
 }
 
+.modalContactUs {
+	position: fixed;
+	z-index: 100;
+	/*display: flex;*/
+	align-items: center;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+}
+
+.modalFade {
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .7);
+}
+
+.modalContactUs__content {
+	display: none;
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	max-width: 500px;
+	padding: 30px 30px 20px 30px;
+	margin: auto;
+	background: #302C42;
+	border-radius: 30px;
+}
+
+.modalBtn {
+	margin-right: 0;
+}
+
+.xBtn {
+	position: absolute;
+	top: 7px;
+	right: 15px;
+}
+
+.xBtn:hover {
+	cursor: pointer;
+	color: #928ab8;
+
+}
+
+.modalShow {
+	display: flex;
+}
+
+.modalContentShow {
+	display: block;
+}
+
+
+
+
 @media (max-width: 1400px) {
 	.introduction__text, .whyBuild__text  {
     	padding-left: 30px;
